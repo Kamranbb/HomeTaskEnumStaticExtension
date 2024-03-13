@@ -10,20 +10,20 @@ namespace Application.Service
     {
          public void Login (string email, string password, Roles role)
         {
-            if (email==Constans.Constans.Email&&  == "test12345")
+            if (email==Constans.Constans.Email&& Constans.Constans.Password == "test12345")
             {
                if (role==Roles.SuperAdmin)
                 {
-                    Console.WriteLine("Giris ugurludur ");
+                    Console.WriteLine(Constans.Constans.Succesmessage);
                 }
                else
                 {
-                    Console.WriteLine("girish huququnuz yoxdur!");
+                    Console.WriteLine(Constans.Constans.RoleMessage);
                 }
             }
             else
             {
-                Console.WriteLine("email ve ya password yanlisdir ");
+                Console.WriteLine(Constans.Constans.FailMessage);
             }
         }
 
