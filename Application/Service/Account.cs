@@ -1,4 +1,5 @@
 ﻿using Application.Application.IAccount;
+using Application.Constans;
 using Application.Enum;
 using System.ComponentModel.DataAnnotations;
 
@@ -9,7 +10,7 @@ namespace Application.Service
     {
          public void Login (string email, string password, Roles role)
         {
-            if (email=="test@code.edu.az"&& password == "test12345")
+            if (email==Constans.Constans.Email&&  == "test12345")
             {
                if (role==Roles.SuperAdmin)
                 {
