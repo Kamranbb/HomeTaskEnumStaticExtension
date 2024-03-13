@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Enum
 {
-    internal enum  Roles
+    public enum  Roles
     {
         SuperAdmin,
         Admin,

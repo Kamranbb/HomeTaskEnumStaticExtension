@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Application.Application.IAccount
 {
-    internal interface IAccount 
+    interface IAccount 
     {
-    void Login (string username, string password,Roles role);
+        public void Login(string email, string password, Roles role);
     }
 }

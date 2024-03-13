@@ -1,14 +1,31 @@
 ﻿using Application.Application.IAccount;
 using Application.Enum;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace Application.Service
 {
-    internal class Account : IAccount
+    public  class Account : IAccount
     {
-        void IAccount.Login(string username, string password, Roles role)
+         public void Login (string email, string password, Roles role)
         {
-            if ()
+            if (email=="test@code.edu.az"&& password == "test12345")
+            {
+               if (role==Roles.SuperAdmin)
+                {
+                    Console.WriteLine("Giris ugurludur ");
+                }
+               else
+                {
+                    Console.WriteLine("girish huququnuz yoxdur!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("email ve ya password yanlisdir ");
+            }
         }
+
+        
     }
 }
